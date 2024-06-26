@@ -86,10 +86,10 @@ const Perso = () => {
         width : '100%',
         height : '100%',
         backgroundColor : '#000A2E',
-        paddingHorizontal : '30px',
+        paddingHorizontal : 30,
         alignItems : 'center',
         justifyContent : 'center',
-        marginHorizontal : '10px'
+        marginHorizontal : 10
       }}>
       <Text style={signupStyles.step}>Etape 3 sur 5</Text>
       <Text style={signupStyles.enter}>Entrez vos informations personnelles</Text>
@@ -97,7 +97,7 @@ const Perso = () => {
     height: 3,
     backgroundColor: 'white',
     alignSelf: 'center',
-    marginTop: '20px',
+    marginTop: 20,
     }}></View>
 
       <Text style={signupStyles.description}>Ces informations seront utilisées par votre compte.</Text>
@@ -117,7 +117,7 @@ const Perso = () => {
       />
       <View style={signupStyles.inputRow}>
         <TextInput
-          style={[signupStyles.input, { width: '25vw' ,flex : 1}]}
+          style={[signupStyles.input, { width: 25 ,flex : 1}]}
           value={day}
           onChangeText={handleDay}
           placeholder="01"
@@ -125,7 +125,7 @@ const Perso = () => {
          
         />
         <TextInput
-          style={[signupStyles.input, { width: '25vw' }]}
+          style={[signupStyles.input, { width: 25 }]}
           value={month}
           onChangeText={handleMonth}
           placeholder="01"
@@ -133,7 +133,7 @@ const Perso = () => {
           
         />
         <TextInput
-          style={[signupStyles.input, { width: '25vw'}]}
+          style={[signupStyles.input, { width: 25}]}
           value={year}
           onChangeText={handleYear}
           placeholder="2002"
@@ -143,14 +143,14 @@ const Perso = () => {
       </View>
       <View style={signupStyles.inputRow}>
         <TextInput
-          style={[signupStyles.input, { width: '25vw' }]}
+          style={[signupStyles.input, { width: 25 }]}
           value={countryCode}
           onChangeText={handleCountryCode}
           placeholder="FR (+33)"
           
         />
         <TextInput
-          style={[signupStyles.input, { width: '55vw' }]}
+          style={[signupStyles.input, { width: 55 }]}
           value={tel}
           onChangeText={handleTel}
           placeholder="123456789"
@@ -168,10 +168,10 @@ const Perso = () => {
               backgroundColor: '#EAC702',
               justifyContent: 'center',
               alignItems: 'center',
-              marginVertical: '30px',
+              marginVertical: 30,
               borderRadius : 20,
               paddingHorizontal : 30,
-              paddingVertical : '30px'
+              paddingVertical : 30
               
               
 

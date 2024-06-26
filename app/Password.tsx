@@ -44,7 +44,7 @@ const Password = () => {
         width : '100%',
         height : '100%',
         backgroundColor : '#000A2E',
-        paddingHorizontal : '30px',
+        paddingHorizontal : 30,
         alignItems : 'center',
         justifyContent : 'center',
         
@@ -55,7 +55,7 @@ const Password = () => {
     height: 3,
     backgroundColor: 'white',
     alignSelf: 'center',
-    marginTop: '10px'
+    marginTop: 10
     }
             
         }></View>
@@ -77,7 +77,7 @@ const Password = () => {
             //required
           />
             <Text style={{ fontSize: 12, color : 'white', 
-            marginTop : '10px'
+            marginTop : 10
         }}>utilisez au moins 8 caractères</Text>
           {/* Votre code existant pour l'affichage de la force du mot de passe */}
 
@@ -102,10 +102,10 @@ const Password = () => {
               backgroundColor: '#EAC702',
               justifyContent: 'center',
               alignItems: 'center',
-              marginVertical: '30px',
+              marginVertical: 30,
               borderRadius : 20,
               paddingHorizontal : 30,
-              paddingVertical : '30px'
+              paddingVertical : 30
               
               
 

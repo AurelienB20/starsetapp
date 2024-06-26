@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, ImageBackground, GestureResponderEvent } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import signupStyles from '../styles/SignupStyles';
-import { StyleSheet, TextStyle, Image } from 'react-native';
+import { StyleSheet, TextStyle } from 'react-native';
 import { CheckBox } from 'react-native-elements';
 //import axios from '../api/axios';
 
@@ -50,68 +50,75 @@ const Email = () => {
       height : '100%',
       backgroundColor : '#FFFFFF',
       paddingHorizontal : 10,
+      flex: 1, alignItems: 'center', justifyContent: 'center' ,
+      
+    }}>
+    
+        
+    
+
+      
      
-      flex: 1, 
-      alignItems: 'center',
+        <Text
+          style={signupStyles.enter}
+        >
+          Informations de connexions 
+        </Text>
+        
+        <Text
+          style={signupStyles.subtitle}
+        >
+          gardez privée vos informations ca ne concerne que vous 
+        </Text>
+        <View style={{
+      width : '100%',
+      height : 100,
+      
       
       
     }}>
-      
-      <View style={{
-          width: 100,
-          height: 100,
-          backgroundColor: "#A0A0FF",
-          borderRadius: 50,
-
-          top : 80,
-          marginBottom : 50
-        }}></View>
-
-        <View style={{
-            width : '100%',
-            height : 30,
-          
-      
-        }}>
 
         </View>
-        <Text
-          style={signupStyles.titleprofilechoice}
-        >
-          Quel profil souhaitez vous créér
-        </Text>
         
-        <View style={{
-            width : '100%',
-            height : 100,
           
+
+          <TextInput
+            style={signupStyles.connectemail}
+            onChangeText={handleEmail}
+            
+            placeholder="email"
+            placeholderTextColor="#808080"
+          />
+
+          <TextInput
+            style={signupStyles.connectmdp}
+            onChangeText={handleEmail}
+            
+            placeholder="mot de passe"
+            placeholderTextColor="#808080"
+          />
+
+          <View style={{
+            width : '100%',
+            height : 50,
+           
+      
       
           }}>
 
-        </View>
-       
+          </View>
+
+          <TextInput
+            style={signupStyles.number}
+            onChangeText={handleEmail}
+            
+            placeholder="+33 "
+            placeholderTextColor="#808080"
+          />
           
         
-        <View style={signupStyles.typeofprofile}>
-          <View style={signupStyles.square}>
-            <Image 
-              source={require('../../assets/images/loupe.png')}
-              style={{
-                width: 50,
-                height: 50
-              }}
-              />
-            <Text style={signupStyles.squaretitle}>User</Text>
-          </View>
-          <View style={signupStyles.square}>
-            <Image source={require('../../assets/images/loupe.png')} style={{
-              width: 50,
-              height: 50
-            }} />
-            <Text style={signupStyles.squaretitle}>Worker</Text>
-          </View>
-        </View>
-       
+        
+
         <Text style={{ fontSize: 16, color: 'black', 
           position: 'absolute', 
           bottom: 30, 
@@ -121,8 +128,7 @@ const Email = () => {
         }}>
           <strong>Star set</strong>
         </Text>
-        
-     
+      
       
     </View>
   );

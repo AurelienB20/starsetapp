@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, ImageBackground, GestureResponderEvent } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import signupStyles from '../styles/SignupStyles';
-import { StyleSheet, TextStyle, Image } from 'react-native';
+import { StyleSheet, TextStyle } from 'react-native';
 import { CheckBox } from 'react-native-elements';
 //import axios from '../api/axios';
 
@@ -50,68 +50,75 @@ const Email = () => {
       height : '100%',
       backgroundColor : '#FFFFFF',
       paddingHorizontal : 10,
-     
-      flex: 1, 
-      alignItems: 'center',
-      
+      flex: 1, alignItems: 'center', justifyContent: 'center' ,
       
     }}>
+    
+        
+    
+
       
-      <View style={{
-          width: 100,
-          height: 100,
-          backgroundColor: "#A0A0FF",
-          borderRadius: 50,
-
-          top : 80,
-          marginBottom : 50
-        }}></View>
-
-        <View style={{
-            width : '100%',
-            height : 30,
-          
-      
-        }}>
-
-        </View>
+     
         <Text
-          style={signupStyles.titleprofilechoice}
+          style={signupStyles.enter}
         >
-          Quel profil souhaitez vous créér
+          Nouveau worker
         </Text>
         
-        <View style={{
-            width : '100%',
-            height : 100,
-          
-      
-          }}>
-
-        </View>
-       
-          
+        <Text
+          style={signupStyles.subtitle}
+        >
+          parlez nous de vous, nous souhaitons vraiment vous connaitre !
+        </Text>
         
-        <View style={signupStyles.typeofprofile}>
-          <View style={signupStyles.square}>
-            <Image 
-              source={require('../../assets/images/loupe.png')}
-              style={{
-                width: 50,
-                height: 50
-              }}
-              />
-            <Text style={signupStyles.squaretitle}>User</Text>
-          </View>
-          <View style={signupStyles.square}>
-            <Image source={require('../../assets/images/loupe.png')} style={{
-              width: 50,
-              height: 50
-            }} />
-            <Text style={signupStyles.squaretitle}>Worker</Text>
-          </View>
-        </View>
-       
+          <TextInput
+            style={signupStyles.nameInput}
+            onChangeText={handleEmail}
+            
+            placeholder="prénom"
+            placeholderTextColor="#808080"
+          />
+          <TextInput
+            style={signupStyles.nameInput}
+            onChangeText={handleEmail}
+            
+            placeholder="nom"
+            placeholderTextColor="#808080"
+          />
+
+          <TextInput
+            style={signupStyles.birth}
+            onChangeText={handleEmail}
+            
+            placeholder="date de naissance"
+            placeholderTextColor="#808080"
+          />
+
+          <TextInput
+            style={signupStyles.place}
+            onChangeText={handleEmail}
+            
+            placeholder="adresse"
+            placeholderTextColor="#808080"
+          />
+
+          <TextInput
+            style={signupStyles.number}
+            onChangeText={handleEmail}
+            
+            placeholder="+33 "
+            placeholderTextColor="#808080"
+          />
+          
+          <TouchableOpacity
+            onPress={handleSubmit}
+            style={signupStyles.submitbutton}
+          >
+            <Text style={{ fontSize: 20, fontWeight : 'bold', }}>suivant</Text>
+          </TouchableOpacity>
+        
+        
+
         <Text style={{ fontSize: 16, color: 'black', 
           position: 'absolute', 
           bottom: 30, 
@@ -121,8 +128,7 @@ const Email = () => {
         }}>
           <strong>Star set</strong>
         </Text>
-        
-     
+      
       
     </View>
   );

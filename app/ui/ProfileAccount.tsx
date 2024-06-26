@@ -9,8 +9,8 @@ type ProfileAccountProps = {
 const ProfileAccount: React.FC<ProfileAccountProps> = ({ name, image }) => {
   return (
     <View style={{ alignItems: 'center' }}>
-      <Image source={image} style={{ width: '33vw', height: '33vw', maxHeight : 120, maxWidth : 120, borderRadius: 60 }} />
-      <Text style={{fontSize : 17 ,  fontWeight : 'bold', color : 'white', fontFamily : 'Arial', marginTop : '4px'}}>{name}</Text>
+      <Image source={image} style={{ width: 330, height: 330, maxHeight : 120, maxWidth : 120, borderRadius: 60 }} />
+      <Text style={{fontSize : 17 ,  fontWeight : 'bold', color : 'white', fontFamily : 'Arial', marginTop : 4}}>{name}</Text>
     </View>
   );
 }

@@ -1,4 +1,4 @@
-import { StyleSheet, TextStyle } from 'react-native';
+import { StyleSheet, ImageStyle, ViewStyle, TextStyle } from 'react-native';
 
 const signupStyles = StyleSheet.create({
     root: {
@@ -12,8 +12,8 @@ const signupStyles = StyleSheet.create({
       backgroundColor: "var(--dark)",
       fontFamily: "Outfit",
       overflowX: "hidden",
-      backgroundColor: "#000A2E",
-      color: "white",
+      backgroundColor: "#FFFFFF",
+      color: "black",
       lineHeight: "25px",
     },
     email: {
@@ -42,7 +42,7 @@ const signupStyles = StyleSheet.create({
     step: {
       marginRight: "auto",
       marginLeft: "2vw",
-      color : 'white',
+      color : 'black',
       marginBottom : '2vh',
      
     },
@@ -57,19 +57,56 @@ const signupStyles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         
-        fontSize: 20,
+        fontSize: 40,
         marginTop: 0,
         marginHorizontal : 20,
         
         
-        color : 'white'
+        color : 'black'
     },
+
+    connexionbutton : {
+              
+      width: '80vw',
+      maxWidth : '400px',
+      height: 50,
+      backgroundColor: '#70FF70',
+      justifyContent: 'center',
+      alignItems: 'center',
+      marginVertical: 10,
+      borderRadius : 25,
+      marginHorizontal : 10,
+      
+      
+
+    },
+
+    titleprofilechoice: {
+      fontWeight: 'bold',
+      textAlign: 'center',
+      
+      fontSize: 40,
+      marginTop: 20,
+      marginHorizontal : 20,
+      paddingTop : 20,
+      fontSize : 28,
+      color : 'black',
+  },
     description: {
       marginTop: "20px",
       fontSize: "13px",
       textAlign: "center",
-      color : 'white',
+      color : 'black',
       marginHorizontal : "10px"
+    },
+    subtitle: {
+      marginTop: "10px",
+      fontSize: "13px",
+      textAlign: "center",
+      color : 'black',
+      
+      marginBottom : "50px",
+      
     },
     emailInput: {
       fontFamily: "Outfit",
@@ -90,14 +127,171 @@ const signupStyles = StyleSheet.create({
     },
 
 
+    nameInput: {
+      fontFamily: "Outfit",
+      width: "70vw",
+      maxWidth : "250px",
+     
+      
+      
+      backgroundColor: "white",
+      borderRadius: "8px",
+      border: "2px solid black",
+      color: "black",
+      textAlign: "center",
+      fontSize: "15px",
+      padding: "10px",
+      transition: "all 0.5s",
+      
+      marginBottom: "10px",
+      marginHorizontal : '10px',
+     
+      paddingHorizontal : '30px',
+    },
+
+    birth: {
+      fontFamily: "Outfit",
+      width: "70vw",
+      maxWidth : "250px",
+     
+      
+      
+      backgroundColor: "white",
+      borderRadius: "20px",
+      border: "2px solid black",
+      color: "black",
+      textAlign: "center",
+      fontSize: "15px",
+      padding: "8px",
+      transition: "all 0.5s",
+      marginTop: "10px",
+      marginBottom: "20px",
+      
+     
+      
+    },
+
+    connectemail: {
+      fontFamily: "Outfit",
+      width: "70vw",
+      maxWidth : "250px",
+     
+      
+      
+      backgroundColor: "white",
+      borderRadius: "20px",
+      border: "2px solid black",
+      color: "black",
+      textAlign: "center",
+      fontSize: "15px",
+      padding: "8px",
+      transition: "all 0.5s",
+      marginTop: "10px",
+      
+      
+     
+      
+    },
+
+    connectmdp: {
+      fontFamily: "Outfit",
+      width: "70vw",
+      maxWidth : "250px",
+     
+      
+      
+      backgroundColor: "white",
+      borderRadius: "20px",
+      border: "2px solid black",
+      color: "black",
+      textAlign: "center",
+      fontSize: "15px",
+      padding: "8px",
+      transition: "all 0.5s",
+      marginTop: "10px",
+      
+      
+     
+      
+    },
+
+    place: {
+      fontFamily: "Outfit",
+      width: "70vw",
+      maxWidth : "350px",
+     
+      
+      
+      backgroundColor: "white",
+      borderRadius: "20px",
+      border: "2px solid black",
+      color: "black",
+      textAlign: "center",
+      fontSize: "15px",
+      padding: "8px",
+      transition: "all 0.5s",
+      marginTop: "10px",
+      
+      
+     
+      
+    },
+
+    number: {
+      fontFamily: "Outfit",
+      width: "70vw",
+      maxWidth : "350px",
+     
+      
+      
+      backgroundColor: "white",
+      borderRadius: "20px",
+      border: "2px solid black",
+      color: "black",
+      textAlign: "center",
+      fontSize: "15px",
+      padding: "8px",
+      transition: "all 0.5s",
+      marginTop: "10px",
+      marginBottom: "20px",
+      
+     
+      
+    },
+
+
+
+    test: {
+      marginHorizontal: "20px",
+      backgroundColor: "red",
+      height: "200px",
+      width: "200px"
+    },
+
+    submitbutton : {
+              
+      maxWidth: 300,
+      width: "60vw",
+      height: 50,
+      backgroundColor: '#70FF70',
+      justifyContent: 'center',
+      alignItems: 'center',
+      marginVertical: 10,
+      borderRadius : 25,
+      marginHorizontal : 10,
+      
+      
+
+    },
+
     input: {
       fontFamily: "Outfit",
-      width: '90vw',
-      maxWidth : "600px",
-      display: "inline-block",
+      width: '80vw',
+      maxWidth : "450px",
+      
       backgroundColor: "white",
-      borderRadius: "5px",
-      border: "2px thin #002FD9",
+      borderRadius: "15px",
+      border: "2px solid black",
       color: "black",
       textAlign: "center",
       fontSize: "15px",
@@ -105,9 +299,49 @@ const signupStyles = StyleSheet.create({
       transition: "all 0.5s",
       marginTop: "20px",
       marginHorizontal : '10px',
-      border: 0,
+     
       paddingHorizontal : '30px',
     },
+
+    inputpassword: {
+      fontFamily: "Outfit",
+      width: '70vw',
+      maxWidth : "450px",
+      
+      backgroundColor: "white",
+      borderRadius: "15px",
+      border: "2px solid black",
+      color: "black",
+      textAlign: "center",
+      fontSize: "15px",
+      padding: "10px",
+      transition: "all 0.5s",
+      marginTop: "10px",
+      marginHorizontal : '10px',
+     
+      paddingHorizontal : '30px',
+    },
+
+    inputemailcreation: {
+      fontFamily: "Outfit",
+      width: '70vw',
+      maxWidth : "450px",
+      
+      backgroundColor: "white",
+      borderRadius: "15px",
+      border: "2px solid black",
+      color: "black",
+      textAlign: "center",
+      fontSize: "15px",
+      padding: "10px",
+      transition: "all 0.5s",
+      marginTop: "10px",
+      marginBottom: "10px",
+      marginHorizontal : '10px',
+     
+      paddingHorizontal : '30px',
+    },
+
     inputLeft: {
       width: "120px",
     },
@@ -193,7 +427,7 @@ const signupStyles = StyleSheet.create({
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      color: "#000A2F",
+      color: "#FFFFFF",
       position: "relative",
     },
     offerName: {
@@ -253,7 +487,7 @@ const signupStyles = StyleSheet.create({
         backgroundColor: 'black',
       },
       checkmark: {
-        color: 'white',
+        color: 'black',
         fontWeight: 'bold',
       },
     
@@ -274,13 +508,53 @@ const signupStyles = StyleSheet.create({
       strengthText: {
         display: "flex",
         justifyContent: "center",
-        color : 'white',
+        color : 'black',
         marginTop : '10px'
       },
 
       li : {
         fontSize : '16px'
-      }
+      },
+
+      typeofprofile : {
+        height: '200px',
+        width: '100vw',
+        
+        flexDirection: 'row',
+        justifyContent: 'space-around', // Aligne les carrés aux extrémités
+        alignItems: 'center', // Centre les carrés verticalement
+        
+        paddingHorizontal: 20,
+      },
+
+      squareprofile: {
+
+      },
+
+      square: {
+        width: '30vw',
+        height: '30vw',
+        maxHeight: "200px",
+        maxWidth: "200px",
+        backgroundColor: '#f0f0f0', // Change as needed
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.8,
+        shadowRadius: 2,
+        elevation: 1,
+      },
+      squareicon: {
+       
+      } ,
+      squaretitle: {
+        fontSize: 14,
+        fontWeight: 'bold',
+      },
+
+
 
   });
 

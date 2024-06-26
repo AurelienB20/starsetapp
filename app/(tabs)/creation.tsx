@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, ImageBackground, GestureResponderEvent } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import signupStyles from './styles/SignupStyles';
+import signupStyles from '../styles/SignupStyles';
 import { StyleSheet, TextStyle } from 'react-native';
 import { CheckBox } from 'react-native-elements';
 //import axios from '../api/axios';
@@ -48,22 +48,21 @@ const Email = () => {
     <View style={{
       width : '100%',
       height : '100%',
-      backgroundColor : '#000A2E',
-      paddingHorizontal : 10
+      backgroundColor : '#FFFFFF',
+      paddingHorizontal : 10,
+      flex: 1, alignItems: 'center', justifyContent: 'center' ,
+      marginHorizontal: 3
     }}>
     
         
     
 
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' ,
-      marginHorizontal: 3
-    
-    }}>
-      <Text style={signupStyles.step}>Etape 1 sur 5</Text>
+      
+     
         <Text
           style={signupStyles.enter}
         >
-          Libérer votre imagination avec nos livres à volonté et bien plus encore !
+          Création par Email !
         </Text>
         <View style={{width: '50%',
     height: 3,
@@ -76,38 +75,39 @@ const Email = () => {
             
         }></View>
         <Text
-          style={signupStyles.description}
+          style={signupStyles.subtitle}
         >
-          Cette adresse mail vous permet de vous identifier pour lire vos livres préférés
+          Laissez-nous identifier votre profil, Star Set n'attends plus que vous !
         </Text>
-        <View style={{ marginVertical: 20 }}>
+        
           <TextInput
-            style={signupStyles.input}
+            style={signupStyles.inputemailcreation}
             onChangeText={handleEmail}
             
             placeholder="chapter@exemple.com"
             placeholderTextColor="#808080"
           />
+          <TextInput
+            style={signupStyles.inputpassword}
+            onChangeText={handleEmail}
+            
+            placeholder="mot de passe"
+            placeholderTextColor="#808080"
+          />
+          <TextInput
+            style={signupStyles.inputpassword}
+            onChangeText={handleEmail}
+            
+            placeholder="confirmation mot de passe"
+            placeholderTextColor="#808080"
+          />
           <TouchableOpacity
             onPress={handleSubmit}
-            style={{
-              
-              width: 400,
-              height: 50,
-              backgroundColor: '#EAC702',
-              justifyContent: 'center',
-              alignItems: 'center',
-              marginVertical: 10,
-              borderRadius : 25,
-              marginHorizontal : 10,
-              
-              
-
-            }}
+            style={signupStyles.submitbutton}
           >
-            <Text style={{ fontSize: 20, fontWeight : 'bold' }}>Suivant</Text>
+            <Text style={{ fontSize: 20, fontWeight : 'bold', }}>Connexion</Text>
           </TouchableOpacity>
-        </View>
+        
         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
         <TouchableOpacity
       style={[signupStyles.checkbox, isChecked && signupStyles.checked]}
@@ -119,7 +119,7 @@ const Email = () => {
             Oui, je voudrais recevoir des offres spéciales de Chapter par mail.
           </Text>
         </View>
-      </View>
+      
       
     </View>
   );

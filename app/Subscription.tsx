@@ -22,16 +22,7 @@ const Subscription = () => {
   };
 
   return (
-    <View style={{
-        width : '100%',
-        
-        backgroundColor : '#000A2E',
-        paddingHorizontal : '30px',
-        alignItems : 'center',
-        justifyContent : 'center',
-        marginHorizontal : '10px',
-        paddingTop : 50
-        }}>
+    <View style={{ width : '100%',backgroundColor : '#000A2E',paddingHorizontal : 30,alignItems : 'center',justifyContent : 'center',marginHorizontal : 10,paddingTop : 50}}>
       
       <View style={styles.form}>
         <Text style={signupStyles.step}>Step 4 of 5</Text>
@@ -40,7 +31,7 @@ const Subscription = () => {
     height: 3,
     backgroundColor: 'white',
     alignSelf: 'center',
-    marginTop: '20px',
+    marginTop: 20,
     }}></View>
         <Text style={signupStyles.description}>
           Plongez dans un océan de savoir avec des offres pour tous les budgets

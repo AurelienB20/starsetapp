@@ -27,7 +27,7 @@ const App = () => {
                 <Stack.Screen name="" component={Email} />
                 <Stack.Screen name="Email" component={Email} />
                 <Stack.Screen name="Password" component={Password} />
-                <Stack.Screen name="Perso" component={Perso} />
+                
                 <Stack.Screen name="Subscription" component={Subscription} />
                 <Stack.Screen name="PopUp" component={PopUp} />
                 <Stack.Screen name="Profile" component={Profile} />
